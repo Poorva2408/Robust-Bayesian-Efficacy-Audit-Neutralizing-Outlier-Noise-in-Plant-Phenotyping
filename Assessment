@@ -1,0 +1,14 @@
+Technical Audit: Treatment 2 Scalability
+Date: 2026-03-13
+Analyst: Poorva, Electronics Engineer. 
+
+Assessment of Efficacy One-Way ANOVA (F=4.846, p=0.0159$) confirms a statistically significant difference between groups. 
+Bayesian MCMC refinement quantifies this as a +0.49 unit advantage for Treatment 2 with 93.8% certainty.
+
+2. Model Selection Logic We utilized Model 1 (Pooled Variance). While Treatment 1 showed localized volatility, Model 1 captures the global species variance (sigma approx 0.63), providing a more reliable "transferable" predictor for future batches.
+
+3. Risk & Scalability Roadmap The current pilot (N=10) is underpowered. Our stochastic roadmap identifies N=10 as being vulnerable to "Black Swan" sampling noise.
+  Current Power: approx 50 % (The "Gamble Zone")
+  Required Action: Pivot to N=27 per group to achieve the "Reliability Standard" (80-90% Power).
+
+Conclusion: Treatment 2 is a high-potential asset. Proceed to Phase 2 trial with $N=27$ to secure industrial-grade certainty.

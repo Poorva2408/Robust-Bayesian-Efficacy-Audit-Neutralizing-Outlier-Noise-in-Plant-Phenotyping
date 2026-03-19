@@ -12,7 +12,7 @@ To mitigate the $57\%$ risk of false negatives inherent in the current $N=42$ sa
 
 ![Figure 1: Raincloud Plot of Baseline](/Figures/EDA_raincloud.png)
 
-![Figure 2: Raincloud Plot of Posterior N = 42](Figures/Raincloud_SignalRecovery.png)
+![Figure 2: Raincloud Plot of Posterior N = 42](/Figures/Raincloud_SignalRecovery.png)
 
 ### 1. Likelihood Stress-Test Matrix: Evolutionary Benchmarking
 

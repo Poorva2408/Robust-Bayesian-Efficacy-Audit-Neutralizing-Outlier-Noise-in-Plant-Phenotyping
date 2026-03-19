@@ -7,7 +7,7 @@ This technical audit evaluates the transition from legacy frequentist ANOVA to a
 While a Separate Variance Gaussian model ($M_2$) identified heteroscedasticity, it remained fragile; the outliers inflated the noise floor to $\sigma = 1.29$. By deploying a Robust-t Likelihood ($\nu=4$), we achieved a $35\%$ increase in signal precision, recovering the true noise floor of $\sigma = 0.90$. This model identifies Treatment 2 as a high-yield success with $99.8\%$ Bayesian certainty.
 
 To mitigate the $57\%$ risk of false negatives inherent in the current $N=42$ sample, the audit identifies an Efficiency Peak at $N=125$. Scaling to this target provides $80\%$ statistical power, ensuring maximum decision reliability and a defensible ROI for Phase III deployment.
-![Figure 1: Raincloud Plot of Baseline](https://raw.githubusercontent.com/Poorva2408/ANOVA/main/Figures/EDA_raincloud.png)
+![Figure 1: Raincloud Plot of Baseline](/Figures/EDA_raincloud.png)
 ### 1. Likelihood Stress-Test Matrix: Evolutionary Benchmarking
 
 This matrix tracks the performance of four distinct architectures across two operational phases: the Clean Baseline ($N=10$) and the High-Noise Stress Phase ($N=42$) containing dynamical "Black Swan" events ($1.2, 8.8, 9.5$).

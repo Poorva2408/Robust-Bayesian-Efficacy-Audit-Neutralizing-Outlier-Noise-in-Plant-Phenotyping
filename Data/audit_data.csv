@@ -1,0 +1,3 @@
+"","Group","Obs_Var","M1_Sigma","M2_Sigma","M1_Bias","M2_Delta","System_Risk"
+"1","Treatment 1",0.63,0.7129,0.9256,"27.3%","Ref (Noisiest)","CRITICAL: Power Loss"
+"2","Treatment 2",0.196,0.7129,0.7363,"1.9%","-25.6% vs Trt1","Negligible"

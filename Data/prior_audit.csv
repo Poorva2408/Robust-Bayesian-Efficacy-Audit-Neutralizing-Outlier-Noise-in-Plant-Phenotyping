@@ -1,0 +1,6 @@
+"","Parameter","Value_JAGS","Strategy","Engineering_Logic"
+"1","mu_grand","dnorm(5, 0.01)","Weakly Informative","Centered on expected plant height; high variance."
+"2","tau_grand","dgamma(0.1, 0.1)","Non-committal Tether","Allows group means to diverge if signal is strong."
+"3","sig[j]","dunif(0, 5)","Flat Boundary","Allows heteroscedasticity; caps noise at 100% CV."
+"4","mu[j]","dnorm(mu_grand, tau_grand)","Hierarchical / Shrinkage","Tethers Treatment 1 to the 'Family Mean' to stop hype."
+"5","nu (df)","Constant = 4","Robust / Fat-Tailed","Forces model to expect 3-4 sigma Black Swans."

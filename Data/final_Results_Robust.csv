@@ -1,0 +1,4 @@
+"","Group","Posterior_Mean","Posterior_SD","Lower_95_HDI","Upper_95_HDI","Noise_Floor","Prob_Success","noisier_than","Verdict"
+"1","Control",5.01,0.12,4.79,5.25,0.64,"-","-","Baseline"
+"2","Treatment 1",4.39,0.2,4,4.8,1.09,"0.4%","81.26%","FAILURE: Inhibitor"
+"3","Treatment 2",5.58,0.16,5.26,5.9,0.9,"99.8%","18.74%","SUCCESS: High Yield"

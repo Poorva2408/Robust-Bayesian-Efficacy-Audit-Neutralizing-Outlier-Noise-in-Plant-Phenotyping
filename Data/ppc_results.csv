@@ -1,0 +1,4 @@
+"","Metric","Model_1_Pooled","Model_2_Separate"
+"1","DIC Score (Parsimony)","417.6","404.6(Winner)"
+"2","Bayesian p-value (Trt1 Var)","0.0475","0.395 (Winner)"
+"3","Interpretation","Underestimates localized noise.","Captures heteroscedastic profile."

@@ -1,0 +1,5 @@
+"","Feature","Standard_Approach","Robust_Approach","Black_Swan_Effect","Fix_Action"
+"1","Likelihood","Normal (Rigid)","Student-t (Flexible)","Outliers wreck the Mean","Masks 3-4 Sigma events"
+"2","Priors","Flat/Independent","Hierarchical (Tethered)","Overfits to noise","Shrinkage toward truth"
+"3","Sample Strategy","N=10 (Gamble)","N=42 (Shielded)","72% Failure Risk","LLN Stabilizes SNR"
+"4","Goal","Hope for Significance","Quantified Reliability","High Discovery Risk","Phase II Calibration"

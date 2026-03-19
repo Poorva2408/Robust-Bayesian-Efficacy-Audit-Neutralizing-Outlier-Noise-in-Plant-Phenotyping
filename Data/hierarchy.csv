@@ -1,0 +1,4 @@
+"","Model","Parameters","Compute_Cost","Failure_Mode"
+"1","M1: Pooled","1 mu, 1 sigma","Low (O(n))","Bias (Smears noise)"
+"2","M2: Heteroscedastic","3 mu, 3 sigma","Moderate (O(k*n))","Fragility (Outlier panic)"
+"3","M3: Robust (Student-t)","3 mu, 3 sigma, fixed nu=4","High (O(k*mcmc))","High-N Demand (Skeptical)"

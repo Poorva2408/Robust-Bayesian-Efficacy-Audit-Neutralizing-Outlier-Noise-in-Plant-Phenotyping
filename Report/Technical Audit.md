@@ -28,7 +28,7 @@ This matrix tracks the performance of four distinct architectures across two ope
 | **Stress ($N=42$)** | **$M_2$: Separate Var** | Heteroscedastic; $\sigma_j$ unique | Triggers "Panic" mode | $1.29$ (Panic) | Low Power | **Fragile / Boring** |
 | **Stress ($N=42$)** | **$M_3$: Robust-t** | Signal Recovery; Outliers $\neq$ Errors | **Neutralized ($\nu=4$)** | **$0.90$ (Pure Signal)** | **$99.8\%$ Validated** | **High-Fidelity** |
 
-![Figure 2: Model Comparison ](Figures/PhaseII_Final_Audit_N42.png) 
+![Figure 2: Model_Comparison](Figures/PhaseII_Final_Audit_N42.png) 
 
 ![Figure 3: Sensitivity Analyis N = 42](/Figures/Final_System_AuditBS242.png)
 
@@ -43,6 +43,7 @@ The transition to $M_3$ was a mechanical necessity based on the following audit 
    The baseline challenge was identifying how different statistical architectures handled the $1.2, 8.8$, and $9.5$ extreme values.
    
 ![Figure 5: Raincloud Plot of Posterior N = 42](/Figures/Raincloud_SignalRecovery.png)
+
 \begin{table}[h!]
 \centering
 \renewcommand{\arraystretch}{1.5}
@@ -56,7 +57,9 @@ The transition to $M_3$ was a mechanical necessity based on the following audit 
 \caption{Evolutionary Benchmarking of Likelihood Robustness under Black Swan Stress ($N=42$)}
 \label{table:model_evolution}
 \end{table}
-![Figure 6: Power Simulation ](/Figures/Power_sim2.png)
+
+![Figure 6: Power Simulation ](/Figures/Power_sim2.png)  
+
 
 
 

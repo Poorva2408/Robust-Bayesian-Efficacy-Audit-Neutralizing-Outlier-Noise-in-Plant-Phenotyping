@@ -1,4 +1,4 @@
-## Phase III Technical Audit: Scaling to $N=125$1. 
+## Phase III Technical Audit: Scaling to N=125. 
 Executive Strategy: The "Efficiency Peak"We are transitioning from an $N=42$ pilot to an $N=125$ Industrial Standard. 
 This move is a strategic shift to mathematically "lock in" the established Treatment 2 advantage against biological noise.
 

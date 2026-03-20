@@ -26,16 +26,16 @@ This move is a strategic shift to mathematically "lock in" the established Treat
       The 95% HDI should narrow by 40–50% compared to the pilot.
 
       3.2 Statistical Stability Audit
-         <p align="center">
-           <img src="/Figures/statistical Stability.png" width="600" alt="Resized Chart Description">
-           <br>
-         </p>
+<p align="center">
+      <img src="/Figures/statistical Stability.png" width="600" alt="Resized Chart Description">
+      <br>
+</p>
    
       3.3 Real-Time Intervention Triggers
-         <p align="center">
-           <img src="/Figures/RealTimeIntervention.png" width="600" alt="Resized Chart Description">
-           <br>
-         </p>
+<p align="center">
+      <img src="/Figures/RealTimeIntervention.png" width="600" alt="Resized Chart Description">
+      <br>
+</p>
    
 ### 4. Final Verdict Requirement
       Upon reaching $N=125$, the final report must include this sign-off:

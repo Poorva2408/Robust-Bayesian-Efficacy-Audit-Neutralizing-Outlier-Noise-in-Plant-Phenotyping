@@ -2,10 +2,10 @@
 Executive Strategy: The "Efficiency Peak"We are transitioning from an $N=42$ pilot to an $N=125$ Industrial Standard. 
 This move is a strategic shift to mathematically "lock in" the established Treatment 2 advantage against biological noise.
 
-# 1.1 The Statistical GoalCurrent State ($N=42$): Located in the "Gamble Zone." Probability of a False Negative (Type II Error) is 57%.
+1.  The Statistical GoalCurrent State ($N=42$): Located in the "Gamble Zone." Probability of a False Negative (Type II Error) is 57%.
 Target State ($N=125$): Crossing the 80% Power Threshold. This minimizes the "Error Cost"—the financial risk of scaling an unvalidated treatment.
 
-# 1.2 Implementation Roadmap
+1.1 Implementation Roadmap
    Step A - Variance Stabilization: Maintain the Robust-t ($M_3$) likelihood. As $N$ grows, the model must guard against "Late-Stage Outliers" (e.g., sensor failures in the $N=80$ to $N=120$ range).
    Step B - Data Drift Monitoring: Run a Cumulative Posterior Update every 20 samples. The 95% High-Density Interval (HDI) must narrow significantly and remain strictly above the 0.0 baseline.
    Step C - Efficiency Audit: Pay the "Robustness Tax" (MCMC compute time) to secure the 86% Reliability Gain.

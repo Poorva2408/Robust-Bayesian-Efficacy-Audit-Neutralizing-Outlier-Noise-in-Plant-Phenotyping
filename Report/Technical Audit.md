@@ -12,7 +12,6 @@ To mitigate the $57\%$ risk of false negatives inherent in the current $N=42$ sa
 
 ![Figure 1: Raincloud Plot of Baseline](/Figures/EDA_raincloud.png)
 
-![Figure 2: Raincloud Plot of Posterior N = 42](/Figures/Raincloud_SignalRecovery.png)
 
 ### 1. Likelihood Stress-Test Matrix: Evolutionary Benchmarking
 
@@ -28,4 +27,39 @@ This matrix tracks the performance of four distinct architectures across two ope
 | **Stress ($N=42$)** | **$M_1$: Pooled Bayes** | Bayesian Mean; $\sigma_{shared}$ | Smearing: High | $1.23$ (Global) | Biased Low | **Fails PPC** |
 | **Stress ($N=42$)** | **$M_2$: Separate Var** | Heteroscedastic; $\sigma_j$ unique | Triggers "Panic" mode | $1.29$ (Panic) | Low Power | **Fragile / Boring** |
 | **Stress ($N=42$)** | **$M_3$: Robust-t** | Signal Recovery; Outliers $\neq$ Errors | **Neutralized ($\nu=4$)** | **$0.90$ (Pure Signal)** | **$99.8\%$ Validated** | **High-Fidelity** |
+
+![Figure 2: Model Comparison ](Figures/PhaseII_Final_Audit_N42.png) 
+
+![Figure 3: Sensitivity Analyis N = 42](/Figures/Final_System_AuditBS242.png)
+
+The transition to $M_3$ was a mechanical necessity based on the following audit findings:
+1. Outlier Neutralization: In $M_2$, the extreme values ($1.2, 9.5$) forced the Gaussian distribution to widen its "shoulders," resulting in a noise floor of $1.29$.
+2. $M_3$ uses a Student-t likelihood with fixed degrees of freedom ($\nu=4$), which allows the model to categorize these spikes as "expected tail events" rather than structural variance.
+3.Precision Recovery: By filtering out dynamical noise, we recovered a true noise floor of $0.90$ for Treatment 2, a $30.2\%$ precision improvement over the fragile $M_2$ model.
+4.Inhibitor Verification: $M_3$ confirmed with $99.8\%$ certainty that Treatment 1 is a growth inhibitor (Mean: $4.39$), preventing a false-positive investment that could have occurred if noise had been "smeared" across the groups.
+![Figure 4: Final N = 42](/Figures/Model_Comparison_BS2Audit.png)  
+
+2. Black Swan Diagnosis (N = 42)
+   The baseline challenge was identifying how different statistical architectures handled the $1.2, 8.8$, and $9.5$ extreme values.
+   
+![Figure 5: Raincloud Plot of Posterior N = 42](/Figures/Raincloud_SignalRecovery.png)
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Evaluation Phase} & \textbf{Architecture} & \textbf{Outcome} & \textbf{Conclusion} \\ \hline
+\textbf{Phase 1: $M_1$} & Pooled Variance & Smearing of noise across groups. & \textbf{FAILED.} Over-weighted Control noise. \\ \hline
+\textbf{Phase 2: $M_2$} & Heteroscedastic Gaussian & Individual $\sigma$ revealed outliers. & \textbf{FRAGILE.} Outliers ($1.2, 9.5$) exploded $\sigma$. \\ \hline
+\textbf{Phase 3: $M_3$} & Robust Student-t ($\nu=4$) & Mathematical "downgrading" of outliers. & \textbf{SUCCESS.} Recovered true noise floor. \\ \hline
+\end{tabular}
+\caption{Evolutionary Benchmarking of Likelihood Robustness under Black Swan Stress ($N=42$)}
+\label{table:model_evolution}
+\end{table}
+![Figure 6: Power Simulation ](/Figures/Power_sim2.png)
+
+
+
+
+
 

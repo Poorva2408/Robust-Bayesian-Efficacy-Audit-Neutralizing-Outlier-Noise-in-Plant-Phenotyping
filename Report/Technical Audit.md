@@ -171,19 +171,31 @@ The MCMC converged efficiently with Information Criterion $\text{DIC} = 389.7$, 
   <br>
   <b>Figure 11:</b> MCMC Trace Plot 
 </p>
+Figures/SNR.png
+#### 6. Return On Investment & Strategic Roadmap ($N = 42 \to N = 125$)
 
-## 6. Return On Investment & Strategic Roadmap ($N=42 \to N=125$)
-In engineering, ROI is the ratio of Net Value to Cost. The mathematical stability of the $M_3$ signal increases precision by approximately 30.2% relative to the volatile Gaussian baseline:
-$$\Delta \text{SNR}_{\%} = \left( 1 - \frac{\sigma_{\text{robust}}}{\sigma_{\text{gauss}}} \right) \times 100 = \left( 1 - \frac{0.90}{1.29} \right) \times 100 \approx 30.2\%$$
+6. Return On Investment & Strategic Roadmap ($N=42 \to N=125$)
+   In engineering, ROI is the ratio of Net Value to Cost.
+   The mathematical stability of the $M_3$ signal increases precision by approximately 30.2% relative to the volatile Gaussian baseline:
+   
+   <p align="center">
+      <img src="/Figures/SNR.png" width="400" alt="Resized Chart Description">
+      <br> 
+  </p>
 
-6.1 Scaling to the Efficiency PeakTraditional ANOVA at $N=42$ is highly susceptible to Type II errors (false negatives).
+  6.1 Scaling to the Efficiency PeakTraditional ANOVA at $N=42$ is highly susceptible to Type II errors (false negatives).
+   Current State ($N=42$): $\text{Power} \approx 43\%$.
+   
+   The probability of a False Negative is unacceptably high (57%).
+   
+   Target State ($N=125$): Reaching the Efficiency Peak provides $\sim 80\%$ Power.
+   
+   <p align="center">
+      <img src="/Figures/ReliabilityGain.png" width="600" alt="Resized Chart Description">
+      <br> 
+  </p>
 
-Current State ($N=42$): $\text{Power} \approx 43\%$. The probability of a False Negative is unacceptably high (57%).
-Target State ($N=125$): Reaching the Efficiency Peak provides $\sim 80\%$ Power.
-
-Reliability Gain:$$\text{Gain} = \frac{\text{Power}_{125} - \text{Power}_{42}}{\text{Power}_{42}} = \frac{0.80 - 0.43}{0.43} \approx 86\% \text{ improvement in decision stability.}\%$$
-
-6.2 The "Robustness Tax" vs. The "Error Cost"The transition to a Robust-t architecture (the "Robustness Tax") provides a defensible filter against dynamical noise that legacy frequentist models cannot replicate.
+  6.2 The "Robustness Tax" vs. The "Error Cost"The transition to a Robust-t architecture (the "Robustness Tax") provides a defensible filter against dynamical noise that legacy frequentist models cannot replicate.
 
 Avoided Waste: The audit identified Treatment 1 as a growth inhibitor ($0.4\%$ success probability). 
 This prevents a massive R&D investment into a failing product that appeared viable under $M_1$ pooled assumptions.

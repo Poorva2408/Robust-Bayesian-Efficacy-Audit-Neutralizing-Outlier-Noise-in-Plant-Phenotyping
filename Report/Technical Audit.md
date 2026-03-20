@@ -28,7 +28,7 @@ This matrix tracks the performance of four distinct architectures across two ope
 | **Stress ($N=42$)** | **$M_2$: Separate Var** | Heteroscedastic; $\sigma_j$ unique | Triggers "Panic" mode | $1.29$ (Panic) | Low Power | **Fragile / Boring** |
 | **Stress ($N=42$)** | **$M_3$: Robust-t** | Signal Recovery; Outliers $\neq$ Errors | **Neutralized ($\nu=4$)** | **$0.90$ (Pure Signal)** | **$99.8\%$ Validated** | **High-Fidelity** |
 
-![Figure 2: Model_Comparison](Figures/PhaseII_Final_Audit_N42.png) 
+![Figure 2: Model_Comparison](/Figures/PhaseII_Final_Audit_N42.png) 
 
 ![Figure 3: Sensitivity Analyis N = 42](/Figures/Final_System_AuditBS242.png)
 

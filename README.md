@@ -15,9 +15,9 @@ This repository contains the engineering audit for transitioning plant growth ef
       <br> 
   </p>
 4. Scaling to the Efficiency Peak
-      Traditional ANOVA at N=42 is highly susceptible to false negatives (missing a successful treatment).
-      4.1 Current State ($N=42$): $\text{Power} \approx 43\%$.
-      4.2 Target State ($N=125$): Reaching the Efficiency Peak provides $\sim 80\%$Power.
+   Traditional ANOVA at N=42 is highly susceptible to false negatives (missing a successful treatment).
+   4.1 Current State ($N=42$): $\text{Power} \approx 43\%$.
+   4.2 Target State ($N=125$): Reaching the Efficiency Peak provides sim 80 % Power.
 
    <p align="center">
       <img src="/Figures/ReliabilityGain.png" width="600" alt="Resized Chart Description">

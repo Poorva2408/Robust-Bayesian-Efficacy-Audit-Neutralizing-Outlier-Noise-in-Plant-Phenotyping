@@ -49,7 +49,7 @@ The transition to $M_3$ was a mechanical necessity based on the following audit 
 \centering
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|l|l|l|l|}
-\hline
+\hline 
 \textbf{Evaluation Phase} & \textbf{Architecture} & \textbf{Outcome} & \textbf{Conclusion} \\ \hline
 \textbf{Phase 1: $M_1$} & Pooled Variance & Smearing of noise across groups. & \textbf{FAILED.} Over-weighted Control noise. \\ \hline
 \textbf{Phase 2: $M_2$} & Heteroscedastic Gaussian & Individual $\sigma$ revealed outliers. & \textbf{FRAGILE.} Outliers ($1.2, 9.5$) exploded $\sigma$. \\ \hline
@@ -68,8 +68,8 @@ By transitioning to the Robust-t architecture, the model successfully isolated t
 
 \begin{table}[h!]
 \centering
-\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{|l|c|c|l|}
+\renewcommand{\arraystretch}{1.5} 
+\begin{tabular}{|l|c|c|l|} 
 \hline
 \textbf{Group} & \textbf{Gaussian $\sigma$ ($M_2$)} & \textbf{Robust $\sigma$ ($M_3$)} & \textbf{Detection Power} \\ \hline
 Control & $0.80$ & $0.73$ & Agreement (No Swans present) \\ \hline
@@ -83,7 +83,7 @@ Treatment 2 & $1.29$ & $0.90$ & $M_3$ catches $3/3$ Swans \\ \hline
 The transition from $M_2$ (Heteroscedastic Gaussian) to $M_3$ (Robust Student-t) reveals that Gaussian likelihoods were over-estimating noise by $30.2\%$ to $34.8\%$ in the presence of dynamical "Black Swans".
 Control Stability: Both models agree where data is clean ($0.80$ vs $0.73$), validating the baseline.
 Treatment 2 Recovery: $M_3$ successfully "ignored" the $9.5$ and $1.2$ outliers to recover the true noise floor of $0.90$, compared to the panicked $1.29$ estimate in $M_2$.
-![Figure 8: Model 3 Results](/Figures/final_results.png)
+![Figure 8: Model 3 Results](/Figures/RobustdensityBS2.png)
 
 ### 4. Mathematical Backbone and System Specification 
 The transition from $M_0$ to $M_3$ represents a shift from global averaging to local, robust signal processing.

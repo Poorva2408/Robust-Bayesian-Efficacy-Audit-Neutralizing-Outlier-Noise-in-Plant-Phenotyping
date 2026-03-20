@@ -1,4 +1,4 @@
-# ANOVA
+# Robust Bayesian Efficacy Audit: Neutralizing Outlier Noise in Plant Phenotyping
 
 ## Plant Growth Reliability Audit ($M_3$)
 

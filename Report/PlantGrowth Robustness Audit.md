@@ -1,4 +1,4 @@
-Executive Summary: PlantGrowth Robustness Audit
+### Executive Summary: PlantGrowth Robustness Audit
 
 This technical audit evaluates the transition from legacy frequentist ANOVA to a Robust Bayesian Hierarchical Architecture for analyzing dynamical growth data. 
 
@@ -12,8 +12,8 @@ This model identifies Treatment 2 as a high-yield success with 99.8% Bayesian ce
 
 Scaling to this target provides 80% statistical power, ensuring maximum decision reliability and a defensible ROI for Phase III deployment.
 
-Final Project Status
-Best Model: Model 3 (Robust Student-t, nu=4)
-Key Discovery: Treatment 2 superiority confirmed; 
-Treatment 1 identified as a growth inhibitor.
-Operational Mandate: Transition to N=125 per group to ensure 80% reliability.
+### Final Project Status
+  1. Best Model: Model 3 (Robust Student-t, nu=4)
+  2. Key Discovery: Treatment 2 superiority confirmed; 
+  3. Treatment 1 identified as a growth inhibitor.
+  4. Operational Mandate: Transition to N=125 per group to ensure 80% reliability.

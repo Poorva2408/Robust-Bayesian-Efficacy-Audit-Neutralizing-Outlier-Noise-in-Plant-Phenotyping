@@ -160,9 +160,9 @@ model {
 </table>
 
 ## 5. Computational Hierarchy 
-$M_1$ ($\mathcal{O}(n)$): Near-zero cost; useless for heteroscedastic systems.
-$M_2$ ($\mathcal{O}(k \cdot n)$): Moderate cost; high risk of fragility.
-$M_3$ ($\mathcal{O}(k \cdot \text{MCMC})$): Highest computational burden, but provides epistemic safety.
+M_1(O(n)): Near-zero cost; useless for heteroscedastic systems.
+M_2(O(k c.n)): Moderate cost; high risk of fragility.
+M_3(O(k.c MCMC): Highest computational burden, but provides epistemic safety.
 
 Audit Verdict: In our system, the "Robustness Tax" of $M_3$ is entirely justified by the recovery of a stable $0.90$ sigma. 
 The MCMC converged efficiently with Information Criterion $\text{DIC} = 389.7$, $\hat{R} \approx 1.000$ (Upper C.I. $\leq 1.001$), and Effective Sample Sizes (ESS) $> 29,400$.a
@@ -171,8 +171,7 @@ The MCMC converged efficiently with Information Criterion $\text{DIC} = 389.7$, 
   <br>
   <b>Figure 11:</b> MCMC Trace Plot 
 </p>
-Figures/SNR.png
-#### 6. Return On Investment & Strategic Roadmap ($N = 42 \to N = 125$)
+
 
 6. Return On Investment & Strategic Roadmap ($N=42 \to N=125$)
    In engineering, ROI is the ratio of Net Value to Cost.

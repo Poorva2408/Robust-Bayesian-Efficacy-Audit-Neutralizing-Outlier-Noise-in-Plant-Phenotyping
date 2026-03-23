@@ -2,6 +2,9 @@
 
 This repository documents the transition from legacy frequentist ANOVA to a high-fidelity Robust Bayesian Hierarchical Architecture. The audit addresses the failure of standard Gaussian models in the presence of dynamical "Black Swan" interference.
 
+## Explanatory Data Analysis :
+To isolate statistical architecture validation from agronomic latency, physical data collection was bypassed. The foundational PlantGrowth dataset was utilized as a calibrated baseline and synthetically expanded to N=42 (stress-testing) and N=125 (power optimization). This controlled scaling allowed for the deliberate injection of dynamical "Black Swan" outliers (1.2, 8.8, 9.5) and the direct benchmarking of the MCMC samplers without the confounding variables and time-costs of physical field testing. By engineering the input vectors rather than growing physical samples, the audit directly targets the resilience of the Robust-t likelihood function and subsequent power scaling strategies.
+
 ## Executive Summary 
 This technical audit evaluates the transition from legacy frequentist ANOVA to a Robust Bayesian Hierarchical Architecture for analyzing dynamical growth data. Traditional ANOVA and Pooled Bayesian models ($M_1$) failed to isolate treatment effects due to "Black Swan" outlier interference (values of 1.2, 8.8, 9.5), which smeared noise across groups and produced a failing Posterior Predictive Check (PPC) p-value of 0.0475.
 
